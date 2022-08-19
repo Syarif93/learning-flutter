@@ -21,7 +21,7 @@ class _LearnTextFieldState extends State<LearnTextField> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Learn Fluter"),
+        title: const Text("Learn Text Field"),
       ),
       body: ListView(
         padding: const EdgeInsets.all(20),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/widgets/sceens/learn_text_field.dart';
+import 'package:learn_flutter/widgets/screens/learn_http/learn_http.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LearnTextField(),
+      home: LearnHttp(),
     );
   }
 }
