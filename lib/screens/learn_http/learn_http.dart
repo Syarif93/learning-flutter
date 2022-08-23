@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/widgets/screens/learn_http/future_builder.dart';
-import 'package:learn_flutter/widgets/screens/learn_http/http_delete.dart';
-import 'package:learn_flutter/widgets/screens/learn_http/http_get.dart';
-import 'package:learn_flutter/widgets/screens/learn_http/http_post.dart';
-import 'package:learn_flutter/widgets/screens/learn_http/htttp_put.dart';
+import './http_get.dart';
+import './http_post.dart';
+import './htttp_put.dart';
+import './http_delete.dart';
+import './future_builder.dart';
 
 class LearnHttp extends StatefulWidget {
   const LearnHttp({Key? key}) : super(key: key);
