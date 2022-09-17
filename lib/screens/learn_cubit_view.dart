@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:learn_flutter/bloc/user_bloc/user_bloc.dart';
+import 'package:learn_flutter/cubit/user_cubit/user_cubit.dart';
+import 'package:learn_flutter/repositories/user_repository.dart';
 
-// ignore: must_be_immutable
-class LearnBLoCView extends StatelessWidget {
-  const LearnBLoCView({Key? key}) : super(key: key);
+class LearnCubit extends StatelessWidget {
+  const LearnCubit({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    UserRepository userRepository = UserRepository();
+
     return Scaffold(
-      appBar: AppBar(title: const Text("Learn BLoC")),
-      body: BlocBuilder<UserBloc, UserState>(
-        bloc: UserBloc()..add(GetUserList()),
+      appBar: AppBar(
+        title: const Text("Learn Cubit"),
+      ),
+      body: BlocBuilder<UserCubit, UserState>(
+        bloc: UserCubit(repository: userRepository),
         builder: (context, state) {
           if (state is LoadingState) {
             return const Center(
@@ -37,7 +41,7 @@ class LearnBLoCView extends StatelessWidget {
             );
           }
 
-          return const Text("default");
+          return Container();
         },
       ),
     );

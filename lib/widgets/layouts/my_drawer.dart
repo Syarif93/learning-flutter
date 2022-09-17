@@ -53,6 +53,20 @@ class MyDrawer extends StatelessWidget {
                   leading: const Icon(Icons.manage_history),
                   title: const Text("Learn BLoC"),
                 ),
+                ListTile(
+                  onTap: () {
+                    Navigator.pushNamed(context, "/learn_cubit");
+                  },
+                  leading: const Icon(Icons.stream),
+                  title: const Text("Learn Cubit"),
+                ),
+                ListTile(
+                  onTap: () {
+                    Navigator.pushNamed(context, "/learn_google_sign");
+                  },
+                  leading: const Icon(Icons.mail),
+                  title: const Text("Learn Google Sign"),
+                ),
               ],
             ),
           )
