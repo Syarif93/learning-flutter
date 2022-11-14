@@ -67,6 +67,20 @@ class MyDrawer extends StatelessWidget {
                   leading: const Icon(Icons.mail),
                   title: const Text("Learn Google Sign"),
                 ),
+                ListTile(
+                  onTap: () {
+                    Navigator.pushNamed(context, "/learn_google_map");
+                  },
+                  leading: const Icon(Icons.map_outlined),
+                  title: const Text("Learn Google Map"),
+                ),
+                ListTile(
+                  onTap: () {
+                    Navigator.pushNamed(context, "/learn_chat_ui");
+                  },
+                  leading: const Icon(Icons.chat),
+                  title: const Text("Learn Chat UI"),
+                ),
               ],
             ),
           )

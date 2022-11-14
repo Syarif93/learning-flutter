@@ -70,7 +70,7 @@ class _LearnTextFieldState extends State<LearnTextField> {
               print("Login email: ${email.text}, password: ${password.text}");
             },
             style: ElevatedButton.styleFrom(
-              primary: Colors.red[900],
+              backgroundColor: Colors.red[900],
               padding: const EdgeInsets.symmetric(horizontal: 30),
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(50)),
